@@ -1,0 +1,64 @@
+---
+layout: root.webc
+---
+
+<main>
+  <article :class="`${pageClass || ''} padding__block--l  width__xxl`">
+    <template @html="content" webc:nokeep></template>
+  </article>
+</main>
+
+<script>
+  const toggleTheme = () => {
+    if (sessionStorage.getItem("theme") === null) {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        sessionStorage.setItem("theme", "dark");
+      } else {
+        sessionStorage.setItem("theme", "light");
+      }
+      document.documentElement.setAttribute(
+        "data-theme",
+        sessionStorage.getItem("theme")
+      );
+    }
+    if (document.documentElement.getAttribute("data-theme") === "dark") {
+      sessionStorage.setItem("theme", "light");
+    } else {
+      sessionStorage.setItem("theme", "dark");
+    }
+    document.documentElement.setAttribute(
+      "data-theme",
+      sessionStorage.getItem("theme")
+    );
+  }
+
+  const getTheme = (fn) => {
+    if (!window.matchMedia) {
+      return;
+    }
+
+    const query = window.matchMedia("(prefers-color-scheme: dark)");
+
+    fn(query.matches);
+
+    query.addEventListener("change", (event) => fn(event.matches));
+  };
+
+  const findPresent = () => {
+    const present = document.querySelector('.present');
+    present?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  getTheme((isDark) => {
+    document.documentElement.setAttribute(
+      "data-theme",
+      sessionStorage.getItem("theme")
+        ? sessionStorage.getItem("theme")
+        : isDark
+          ? "dark"
+          : "light"
+    );
+  });
+
+  setTimeout(() => findPresent(), 100);
+</script>

@@ -1,0 +1,128 @@
+@layer pasta, project, typography, layout, components, pages;
+
+@import url("https://unpkg.com/@jaredpdesigns/pasta") layer(pasta);
+
+@layer project {
+  :root {
+    --inset__left: env(safe-area-inset-left);
+    --inset__right: env(safe-area-inset-right);
+    --offset__left: calc(var(--size__l) + var(--inset__left));
+    --offset__right: calc(var(--size__l) + var(--inset__right));
+    --type__family--primary: gyst-variable, sans-serif;
+  }
+}
+
+@layer typography {
+
+  body {
+    font-optical-sizing: auto;
+    font-size: var(--type__size--m--fluid);
+    line-height: var(--type__lineheight--l--fluid);
+    text-transform: capitalize;
+  }
+
+  strong {
+    font-variation-settings: "wght" 550;
+  }
+
+  p:empty {
+    display: none;
+  }
+}
+
+@layer layout {
+  body {
+
+    >header,
+    main,
+    >footer {
+      padding-inline-start: var(--offset__left);
+      padding-inline-end: var(--offset__right);
+    }
+  }
+
+  article {
+    overflow: clip;
+  }
+}
+
+@layer components {
+  figure {
+    --color__set--base: hsl(from var(--color) h 24% 24%);
+    --color__base: var(--color__set--base);
+    --color__set--highlight: hsl(from var(--color) h calc(s * 0.5) l);
+    --color__highlight--light: color-mix(in oklab, var(--color__set--highlight) 32%, var(--color__contrast));
+    --color__highlight--ghost: color-mix(in oklab, var(--color__set--highlight) 16%, var(--color__contrast));
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+
+    @media screen and (prefers-color-scheme: dark) {
+      --color__base: color-mix(in oklab, var(--color__set--base) 38%, white);
+    }
+
+    &:before {
+      border-left: var(--size__xxs) dashed var(--color__base--light);
+      content: '';
+      inset-block: 0;
+      inset-inline-start: 50%;
+      display: block;
+      position: absolute;
+    }
+
+    header {
+      justify-items: center;
+
+      >* {
+        min-inline-size: 0;
+      }
+
+      p {
+        text-wrap: balance;
+      }
+    }
+  }
+
+  .dates {
+    justify-items: center;
+    overflow: clip;
+
+    @media(min-width: 640px) {
+      --column__width: var(--width__s);
+    }
+  }
+
+  .day {
+    aspect-ratio: 1;
+    justify-items: center;
+    scroll-margin: var(--size__l);
+
+    @keyframes scale-a-lil {
+      from {
+        scale: .75;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      @supports (animation-timeline: view()) {
+        animation: scale-a-lil linear both;
+        animation-timeline: view();
+        animation-range: 25vh 75vh;
+      }
+    }
+
+    >span {
+      block-size: calc(var(--size__l) * 3);
+      border-radius: 50%;
+      inline-size: calc(var(--size__l) * 3);
+    }
+
+    &.present>span {
+      background-color: var(--color__base);
+      color: var(--color__highlight--ghost);
+    }
+
+    &.future>span {
+      border-style: dashed;
+    }
+  }
+}

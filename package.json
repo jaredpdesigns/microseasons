@@ -1,0 +1,28 @@
+{
+  "name": "microseasons",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An exploration of Japanese microseasons",
+  "author": "Jared Pendergraft <jaredpdesigns@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "build": "eleventy",
+    "clean": "rm -rf dist",
+    "dev": "yarn clean && eleventy --serve"
+  },
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "autoprefixer": "^10.4.16",
+    "fs-extra": "^11.1.1",
+    "html-minifier": "^4.0.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^8.6.7",
+    "postcss": "^8.4.31",
+    "postcss-each": "^1.1.0",
+    "postcss-import": "^16.1.0",
+    "postcss-minify": "^1.1.0",
+    "postcss-nested": "^6.0.1"
+  }
+}
