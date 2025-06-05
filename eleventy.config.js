@@ -40,9 +40,9 @@ export default function (eleventyConfig) {
     const dateConverted = new Date(`${date} ${currentYear}`);
     const options = {
       year: "numeric",
-      month: "long",
-      day: "2-digit",
-      weekday: "long",
+      month: "short",
+      day: "numeric",
+      weekday: "short",
       timeZone: "UTC"
     };
     const dateTimeFormat = new Intl.DateTimeFormat("en-US", options);
@@ -52,22 +52,14 @@ export default function (eleventyConfig) {
     return partsAsObject;
   });
 
-  eleventyConfig.addFilter("determineLeapYear", (microseason) => {
-    const { days, english_name, index } = microseason;
+  eleventyConfig.addFilter("determineLeapYear", (dateArr) => {
     const isLeapYear =
       (currentYear % 4 == 0 && currentYear % 100 != 0) ||
       currentYear % 400 == 0;
-
-    let processedDays = days;
-    if (isLeapYear && days.includes("February 28")) {
-      processedDays = days.concat("February 29");
+    if (isLeapYear && dateArr.includes("February 28")) {
+      return dateArr.concat("February 29");
     }
-
-    return processedDays.map((day) => ({
-      value: day,
-      index: index.toString().padStart(2, "0"),
-      seasonName: english_name
-    }));
+    return dateArr;
   });
 
   eleventyConfig.addFilter("dayHasOccurred", (date) => {

@@ -3,28 +3,38 @@ layout: base.webc
 pageClass: home
 ---
 
-<figure class="color__type--base flow__grid flow__gap--l position__relative"
-  webc:for="(microseason, index) of microseasons" :style="`--color: ${colors[index].hex}`">
-  <header
-    class="border__all color__bg--highlight--ghost color__border--highlight--light flow__grid flow__align--inline-center flow__gap--m padding__l position__relative radius__m">
-    <p class="type__size--xxl-xxl--fluid type__align--center">
-      <strong @text="microseason.english_name"></strong>
-      <small class="type__size--xl-xl--fluid" @text="microseason.japanese_name"></small>
-    </p>
-    <p class="color__bg--highlight--light padding__block-start--xs padding__inline--s radius__s type__align--center">
-      <span @text="microseason.season.english_name" webc:nokeep></span>
-      <small @text="microseason.season.japanese_name"></small>
-    </p>
-  </header>
-  <section class="dates flow__grid flow__gap--l flow__align--inline-center position__relative">
-    <div
-      :class="`${dayHasOccurred(day)} day border__all color__bg--highlight--ghost color__border--highlight--light flow__grid flow__gap--s padding__xxl type__align--center radius__m type__size--xl-xxl--fluid`"
-      webc:for="day of determineLeapYear(microseason.days)">
-      <strong @text="formatDate(day).weekday"></strong>
-      <span
-        class="border__all flow__inline flow__align--block-center flow__align--inline-center flow__align--inline-center padding__block-start--s type__size--xxxl-xxxl--fluid type__align--center"
-        @text="formatDate(day).day"></span>
-      <strong @text="`${formatDate(day).month} ${formatDate(day).year}`"></strong>
-    </div>
+<figure webc:for="(microseason, index) of microseasons"
+  class="microseason border__all color__bg--saffron--ghost color__border--saffron--light radius__l width__xl">
+  <section class="microseason__wrap flow__grid flow__align--block-start flow__gap--l padding__l">
+    <img class="border__all color__bg--contrast color__border--contrast radius__m width__s"
+      :src="`/images/${microseason.index.toString().padStart(2, '0')}.png`" :alt="microseason.english_name" />
+    <figcaption class="flow__grid flow__gap--m">
+      <header class="flow__grid flow__gap--m">
+        <p>
+          <strong class="color__type--base--ish" @text="microseason.season.english_name"></strong>
+          <small class="color__type--base--mid" @text="microseason.season.japanese_name"></small>
+        </p>
+        <hr />
+        <section>
+          <p class="color__type--base--ish">
+            <small
+              @text="`${formatDate(microseason.start_date).month} ${formatDate(microseason.start_date).day}–${formatDate(microseason.end_date).month} ${formatDate(microseason.end_date).day}`"></small>
+          </p>
+          <p class="flow__flex flow__align--block-center flow__gap--s flow__flex--wrap">
+            <strong class="type__size--xl-l--fluid" @text="microseason.english_name"></strong>
+            <small class="color__type--base--mid" @text="microseason.japanese_name"></small>
+          </p>
+        </section>
+
+      </header>
+      <section class="days flow__flex flow__align--inline-start flow__gap--s flow__flex--wrap">
+        <p :class="`day day__${dayHasOccurred(day)} border__all color__border--saffron--mid flow__inline flow__align--inline-center flow__direction--column type__align--center`"
+          webc:for="day of determineLeapYear(microseason.days)">
+          <small class="color__type--base--ish" @text="formatDate(day).weekday"></small>
+          <strong class="type__size--xl-xs--fluid" @text="formatDate(day).day"></strong>
+          <small class="color__type--base--ish" @text="formatDate(day).month"></small>
+        </p>
+      </section>
+    </figcaption>
   </section>
 </figure>

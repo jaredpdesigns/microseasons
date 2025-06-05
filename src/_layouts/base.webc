@@ -3,7 +3,7 @@ layout: root.webc
 ---
 
 <main>
-  <article :class="`${pageClass || ''} padding__block--l  width__xxl`">
+  <article :class="`${pageClass || ''} flow__grid flow__gap--m padding__block--l  width__xxl`">
     <template @html="content" webc:nokeep></template>
   </article>
 </main>
@@ -45,8 +45,9 @@ layout: root.webc
   };
 
   const findPresent = () => {
-    const present = document.querySelector('.present');
-    present?.scrollIntoView({ behavior: "smooth" });
+    const presentDay = document.querySelector('.day__present');
+    const presentSeason = presentDay?.closest('.microseason');
+    presentSeason?.scrollIntoView({ behavior: "smooth" });
   }
 
   getTheme((isDark) => {
