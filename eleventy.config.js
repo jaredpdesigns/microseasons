@@ -9,11 +9,28 @@ import postcssImport from "postcss-import";
 import postcssNested from "postcss-nested";
 import postcssEach from "postcss-each";
 import autoprefixer from "autoprefixer";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default function (eleventyConfig) {
   // Turn on components
   eleventyConfig.addPlugin(pluginWebC, {
     components: "src/_components/**/*.webc"
+  });
+
+  // Image optimization
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    inputDir: "images",
+    formats: ["avif", "webp", "jpeg"],
+    widths: [320, 640],
+    outputDir: "dist/img/",
+    urlPath: "/img/",
+    htmlOptions: {
+      imgAttributes: {
+        decoding: "async",
+        loading: "lazy",
+        sizes: "(min-width: 36em) 33.3vw, 100vw"
+      }
+    }
   });
 
   const currentYear = new Date().getFullYear();
@@ -35,14 +52,22 @@ export default function (eleventyConfig) {
     return partsAsObject;
   });
 
-  eleventyConfig.addFilter("determineLeapYear", (dateArr) => {
+  eleventyConfig.addFilter("determineLeapYear", (microseason) => {
+    const { days, english_name, index } = microseason;
     const isLeapYear =
       (currentYear % 4 == 0 && currentYear % 100 != 0) ||
       currentYear % 400 == 0;
-    if (isLeapYear && dateArr.includes("February 28")) {
-      return dateArr.concat("February 29");
+
+    let processedDays = days;
+    if (isLeapYear && days.includes("February 28")) {
+      processedDays = days.concat("February 29");
     }
-    return dateArr;
+
+    return processedDays.map((day) => ({
+      value: day,
+      index: index.toString().padStart(2, "0"),
+      seasonName: english_name
+    }));
   });
 
   eleventyConfig.addFilter("dayHasOccurred", (date) => {

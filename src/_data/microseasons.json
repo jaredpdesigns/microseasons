@@ -11,7 +11,7 @@
       "February 7",
       "February 8"
     ],
-    "colorIndex": 1,
+    "index": 1,
     "season": {
       "english_name": "Spring",
       "japanese_name": "立春"
@@ -29,7 +29,7 @@
       "February 12",
       "February 13"
     ],
-    "colorIndex": 2,
+    "index": 2,
     "season": {
       "english_name": "Spring",
       "japanese_name": "立春"
@@ -47,7 +47,7 @@
       "February 17",
       "February 18"
     ],
-    "colorIndex": 3,
+    "index": 3,
     "season": {
       "english_name": "Spring",
       "japanese_name": "立春"
@@ -65,7 +65,7 @@
       "February 22",
       "February 23"
     ],
-    "colorIndex": 4,
+    "index": 4,
     "season": {
       "english_name": "Rain Water",
       "japanese_name": "雨水"
@@ -83,7 +83,7 @@
       "February 27",
       "February 28"
     ],
-    "colorIndex": 5,
+    "index": 5,
     "season": {
       "english_name": "Rain Water",
       "japanese_name": "雨水"
@@ -95,7 +95,7 @@
     "start_date": "March 1",
     "end_date": "March 5",
     "days": ["March 1", "March 2", "March 3", "March 4", "March 5"],
-    "colorIndex": 6,
+    "index": 6,
     "season": {
       "english_name": "Rain Water",
       "japanese_name": "雨水"
@@ -107,7 +107,7 @@
     "start_date": "March 6",
     "end_date": "March 10",
     "days": ["March 6", "March 7", "March 8", "March 9", "March 10"],
-    "colorIndex": 7,
+    "index": 7,
     "season": {
       "english_name": "Insects Awaken",
       "japanese_name": "啓蟄"
@@ -119,7 +119,7 @@
     "start_date": "March 11",
     "end_date": "March 15",
     "days": ["March 11", "March 12", "March 13", "March 14", "March 15"],
-    "colorIndex": 8,
+    "index": 8,
     "season": {
       "english_name": "Insects Awaken",
       "japanese_name": "啓蟄"
@@ -131,7 +131,7 @@
     "start_date": "March 16",
     "end_date": "March 20",
     "days": ["March 16", "March 17", "March 18", "March 19", "March 20"],
-    "colorIndex": 9,
+    "index": 9,
     "season": {
       "english_name": "Insects Awaken",
       "japanese_name": "啓蟄"
@@ -143,7 +143,7 @@
     "start_date": "March 21",
     "end_date": "March 25",
     "days": ["March 21", "March 22", "March 23", "March 24", "March 25"],
-    "colorIndex": 10,
+    "index": 10,
     "season": {
       "english_name": "Spring Equinox",
       "japanese_name": "春分"
@@ -155,7 +155,7 @@
     "start_date": "March 26",
     "end_date": "March 30",
     "days": ["March 26", "March 27", "March 28", "March 29", "March 30"],
-    "colorIndex": 11,
+    "index": 11,
     "season": {
       "english_name": "Spring Equinox",
       "japanese_name": "春分"
@@ -167,7 +167,7 @@
     "start_date": "March 31",
     "end_date": "April 4",
     "days": ["March 31", "April 1", "April 2", "April 3", "April 4"],
-    "colorIndex": 12,
+    "index": 12,
     "season": {
       "english_name": "Spring Equinox",
       "japanese_name": "春分"
@@ -179,7 +179,7 @@
     "start_date": "April 5",
     "end_date": "April 9",
     "days": ["April 5", "April 6", "April 7", "April 8", "April 9"],
-    "colorIndex": 13,
+    "index": 13,
     "season": {
       "english_name": "Clear and Bright",
       "japanese_name": "清明"
@@ -191,7 +191,7 @@
     "start_date": "April 10",
     "end_date": "April 14",
     "days": ["April 10", "April 11", "April 12", "April 13", "April 14"],
-    "colorIndex": 14,
+    "index": 14,
     "season": {
       "english_name": "Clear and Bright",
       "japanese_name": "清明"
@@ -203,7 +203,7 @@
     "start_date": "April 15",
     "end_date": "April 19",
     "days": ["April 15", "April 16", "April 17", "April 18", "April 19"],
-    "colorIndex": 15,
+    "index": 15,
     "season": {
       "english_name": "Clear and Bright",
       "japanese_name": "清明"
@@ -215,7 +215,7 @@
     "start_date": "April 20",
     "end_date": "April 24",
     "days": ["April 20", "April 21", "April 22", "April 23", "April 24"],
-    "colorIndex": 16,
+    "index": 16,
     "season": {
       "english_name": "Grain Rains",
       "japanese_name": "穀雨"
@@ -227,7 +227,7 @@
     "start_date": "April 25",
     "end_date": "April 29",
     "days": ["April 25", "April 26", "April 27", "April 28", "April 29"],
-    "colorIndex": 17,
+    "index": 17,
     "season": {
       "english_name": "Grain Rains",
       "japanese_name": "穀雨"
@@ -239,7 +239,7 @@
     "start_date": "April 30",
     "end_date": "May 4",
     "days": ["April 30", "May 1", "May 2", "May 3", "May 4"],
-    "colorIndex": 18,
+    "index": 18,
     "season": {
       "english_name": "Grain Rains",
       "japanese_name": "穀雨"
@@ -251,7 +251,7 @@
     "start_date": "May 5",
     "end_date": "May 9",
     "days": ["May 5", "May 6", "May 7", "May 8", "May 9"],
-    "colorIndex": 19,
+    "index": 19,
     "season": {
       "english_name": "Summer",
       "japanese_name": "立夏"
@@ -263,7 +263,7 @@
     "start_date": "May 10",
     "end_date": "May 14",
     "days": ["May 10", "May 11", "May 12", "May 13", "May 14"],
-    "colorIndex": 20,
+    "index": 20,
     "season": {
       "english_name": "Summer",
       "japanese_name": "立夏"
@@ -275,7 +275,7 @@
     "start_date": "May 15",
     "end_date": "May 20",
     "days": ["May 15", "May 16", "May 17", "May 18", "May 19", "May 20"],
-    "colorIndex": 21,
+    "index": 21,
     "season": {
       "english_name": "Summer",
       "japanese_name": "立夏"
@@ -287,7 +287,7 @@
     "start_date": "May 21",
     "end_date": "May 25",
     "days": ["May 21", "May 22", "May 23", "May 24", "May 25"],
-    "colorIndex": 22,
+    "index": 22,
     "season": {
       "english_name": "Grain Fills",
       "japanese_name": "小満"
@@ -299,7 +299,7 @@
     "start_date": "May 26",
     "end_date": "May 30",
     "days": ["May 26", "May 27", "May 28", "May 29", "May 30"],
-    "colorIndex": 23,
+    "index": 23,
     "season": {
       "english_name": "Grain Fills",
       "japanese_name": "小満"
@@ -311,7 +311,7 @@
     "start_date": "May 31",
     "end_date": "June 5",
     "days": ["May 31", "June 1", "June 2", "June 3", "June 4", "June 5"],
-    "colorIndex": 24,
+    "index": 24,
     "season": {
       "english_name": "Grain Fills",
       "japanese_name": "小満"
@@ -323,7 +323,7 @@
     "start_date": "June 6",
     "end_date": "June 10",
     "days": ["June 6", "June 7", "June 8", "June 9", "June 10"],
-    "colorIndex": 25,
+    "index": 25,
     "season": {
       "english_name": "Grain Beards and Seeds",
       "japanese_name": "芒種"
@@ -335,7 +335,7 @@
     "start_date": "June 11",
     "end_date": "June 15",
     "days": ["June 11", "June 12", "June 13", "June 14", "June 15"],
-    "colorIndex": 26,
+    "index": 26,
     "season": {
       "english_name": "Grain Beards and Seeds",
       "japanese_name": "芒種"
@@ -347,7 +347,7 @@
     "start_date": "June 16",
     "end_date": "June 20",
     "days": ["June 16", "June 17", "June 18", "June 19", "June 20"],
-    "colorIndex": 27,
+    "index": 27,
     "season": {
       "english_name": "Grain Beards and Seeds",
       "japanese_name": "芒種"
@@ -359,7 +359,7 @@
     "start_date": "June 21",
     "end_date": "June 25",
     "days": ["June 21", "June 22", "June 23", "June 24", "June 25"],
-    "colorIndex": 28,
+    "index": 28,
     "season": {
       "english_name": "Summer Solstice",
       "japanese_name": "夏至"
@@ -371,7 +371,7 @@
     "start_date": "June 26",
     "end_date": "June 30",
     "days": ["June 26", "June 27", "June 28", "June 29", "June 30"],
-    "colorIndex": 29,
+    "index": 29,
     "season": {
       "english_name": "Summer Solstice",
       "japanese_name": "夏至"
@@ -383,7 +383,7 @@
     "start_date": "July 1",
     "end_date": "July 6",
     "days": ["July 1", "July 2", "July 3", "July 4", "July 5", "July 6"],
-    "colorIndex": 30,
+    "index": 30,
     "season": {
       "english_name": "Summer Solstice",
       "japanese_name": "夏至"
@@ -395,7 +395,7 @@
     "start_date": "July 7",
     "end_date": "July 11",
     "days": ["July 7", "July 8", "July 9", "July 10", "July 11"],
-    "colorIndex": 31,
+    "index": 31,
     "season": {
       "english_name": "Minor Heat",
       "japanese_name": "小暑"
@@ -407,7 +407,7 @@
     "start_date": "July 12",
     "end_date": "July 16",
     "days": ["July 12", "July 13", "July 14", "July 15", "July 16"],
-    "colorIndex": 32,
+    "index": 32,
     "season": {
       "english_name": "Minor Heat",
       "japanese_name": "小暑"
@@ -419,7 +419,7 @@
     "start_date": "July 17",
     "end_date": "July 22",
     "days": ["July 17", "July 18", "July 19", "July 20", "July 21", "July 22"],
-    "colorIndex": 33,
+    "index": 33,
     "season": {
       "english_name": "Minor Heat",
       "japanese_name": "小暑"
@@ -431,7 +431,7 @@
     "start_date": "July 23",
     "end_date": "July 27",
     "days": ["July 23", "July 24", "July 25", "July 26", "July 27"],
-    "colorIndex": 34,
+    "index": 34,
     "season": {
       "english_name": "Major Heat",
       "japanese_name": "大暑"
@@ -443,7 +443,7 @@
     "start_date": "July 28",
     "end_date": "August 1",
     "days": ["July 28", "July 29", "July 30", "July 31", "August 1"],
-    "colorIndex": 35,
+    "index": 35,
     "season": {
       "english_name": "Major Heat",
       "japanese_name": "大暑"
@@ -455,7 +455,7 @@
     "start_date": "August 2",
     "end_date": "August 6",
     "days": ["August 2", "August 3", "August 4", "August 5", "August 6"],
-    "colorIndex": 36,
+    "index": 36,
     "season": {
       "english_name": "Major Heat",
       "japanese_name": "大暑"
@@ -467,7 +467,7 @@
     "start_date": "August 7",
     "end_date": "August 11",
     "days": ["August 7", "August 8", "August 9", "August 10", "August 11"],
-    "colorIndex": 37,
+    "index": 37,
     "season": {
       "english_name": "Autumn",
       "japanese_name": "立秋"
@@ -479,7 +479,7 @@
     "start_date": "August 12",
     "end_date": "August 16",
     "days": ["August 12", "August 13", "August 14", "August 15", "August 16"],
-    "colorIndex": 38,
+    "index": 38,
     "season": {
       "english_name": "Autumn",
       "japanese_name": "立秋"
@@ -498,7 +498,7 @@
       "August 21",
       "August 22"
     ],
-    "colorIndex": 39,
+    "index": 39,
     "season": {
       "english_name": "Autumn",
       "japanese_name": "立秋"
@@ -510,7 +510,7 @@
     "start_date": "August 23",
     "end_date": "August 27",
     "days": ["August 23", "August 24", "August 25", "August 26", "August 27"],
-    "colorIndex": 40,
+    "index": 40,
     "season": {
       "english_name": "Limit of Heat",
       "japanese_name": "処暑"
@@ -522,7 +522,7 @@
     "start_date": "August 28",
     "end_date": "September 1",
     "days": ["August 28", "August 29", "August 30", "August 31", "September 1"],
-    "colorIndex": 41,
+    "index": 41,
     "season": {
       "english_name": "Limit of Heat",
       "japanese_name": "処暑"
@@ -541,7 +541,7 @@
       "September 6",
       "September 7"
     ],
-    "colorIndex": 42,
+    "index": 42,
     "season": {
       "english_name": "Limit of Heat",
       "japanese_name": "処暑"
@@ -559,7 +559,7 @@
       "September 11",
       "September 12"
     ],
-    "colorIndex": 43,
+    "index": 43,
     "season": {
       "english_name": "White Dew",
       "japanese_name": "白露"
@@ -577,7 +577,7 @@
       "September 16",
       "September 17"
     ],
-    "colorIndex": 44,
+    "index": 44,
     "season": {
       "english_name": "White Dew",
       "japanese_name": "白露"
@@ -595,7 +595,7 @@
       "September 21",
       "September 22"
     ],
-    "colorIndex": 45,
+    "index": 45,
     "season": {
       "english_name": "White Dew",
       "japanese_name": "白露"
@@ -613,7 +613,7 @@
       "September 26",
       "September 27"
     ],
-    "colorIndex": 46,
+    "index": 46,
     "season": {
       "english_name": "Autumn Equinox",
       "japanese_name": "秋分"
@@ -631,7 +631,7 @@
       "October 1",
       "October 2"
     ],
-    "colorIndex": 47,
+    "index": 47,
     "season": {
       "english_name": "Autumn Equinox",
       "japanese_name": "秋分"
@@ -650,7 +650,7 @@
       "October 7",
       "October 8"
     ],
-    "colorIndex": 48,
+    "index": 48,
     "season": {
       "english_name": "Autumn Equinox",
       "japanese_name": "秋分"
@@ -668,7 +668,7 @@
       "October 12",
       "October 13"
     ],
-    "colorIndex": 49,
+    "index": 49,
     "season": {
       "english_name": "Cold Dew",
       "japanese_name": "寒露"
@@ -686,7 +686,7 @@
       "October 17",
       "October 18"
     ],
-    "colorIndex": 50,
+    "index": 50,
     "season": {
       "english_name": "Cold Dew",
       "japanese_name": "寒露"
@@ -704,7 +704,7 @@
       "October 22",
       "October 23"
     ],
-    "colorIndex": 51,
+    "index": 51,
     "season": {
       "english_name": "Cold Dew",
       "japanese_name": "寒露"
@@ -722,7 +722,7 @@
       "October 27",
       "October 28"
     ],
-    "colorIndex": 52,
+    "index": 52,
     "season": {
       "english_name": "Frost Falls",
       "japanese_name": "霜降"
@@ -740,7 +740,7 @@
       "November 1",
       "November 2"
     ],
-    "colorIndex": 53,
+    "index": 53,
     "season": {
       "english_name": "Frost Falls",
       "japanese_name": "霜降"
@@ -758,7 +758,7 @@
       "November 6",
       "November 7"
     ],
-    "colorIndex": 54,
+    "index": 54,
     "season": {
       "english_name": "Frost Falls",
       "japanese_name": "霜降"
@@ -776,7 +776,7 @@
       "November 11",
       "November 12"
     ],
-    "colorIndex": 55,
+    "index": 55,
     "season": {
       "english_name": "Winter",
       "japanese_name": "立冬"
@@ -794,7 +794,7 @@
       "November 16",
       "November 17"
     ],
-    "colorIndex": 56,
+    "index": 56,
     "season": {
       "english_name": "Winter",
       "japanese_name": "立冬"
@@ -812,7 +812,7 @@
       "November 21",
       "November 22"
     ],
-    "colorIndex": 57,
+    "index": 57,
     "season": {
       "english_name": "Winter",
       "japanese_name": "立冬"
@@ -830,7 +830,7 @@
       "November 26",
       "November 27"
     ],
-    "colorIndex": 58,
+    "index": 58,
     "season": {
       "english_name": "Minor Snow",
       "japanese_name": "小雪"
@@ -848,7 +848,7 @@
       "December 1",
       "December 2"
     ],
-    "colorIndex": 59,
+    "index": 59,
     "season": {
       "english_name": "Minor Snow",
       "japanese_name": "小雪"
@@ -866,7 +866,7 @@
       "December 6",
       "December 7"
     ],
-    "colorIndex": 60,
+    "index": 60,
     "season": {
       "english_name": "Minor Snow",
       "japanese_name": "小雪"
@@ -884,7 +884,7 @@
       "December 11",
       "December 12"
     ],
-    "colorIndex": 61,
+    "index": 61,
     "season": {
       "english_name": "Major Snow",
       "japanese_name": "大雪"
@@ -902,7 +902,7 @@
       "December 16",
       "December 17"
     ],
-    "colorIndex": 62,
+    "index": 62,
     "season": {
       "english_name": "Major Snow",
       "japanese_name": "大雪"
@@ -914,7 +914,7 @@
     "start_date": "December 18",
     "end_date": "December 21",
     "days": ["December 18", "December 19", "December 20", "December 21"],
-    "colorIndex": 63,
+    "index": 63,
     "season": {
       "english_name": "Major Snow",
       "japanese_name": "大雪"
@@ -932,7 +932,7 @@
       "December 25",
       "December 26"
     ],
-    "colorIndex": 64,
+    "index": 64,
     "season": {
       "english_name": "Winter Solstice",
       "japanese_name": "冬至"
@@ -950,7 +950,7 @@
       "December 30",
       "December 31"
     ],
-    "colorIndex": 65,
+    "index": 65,
     "season": {
       "english_name": "Winter Solstice",
       "japanese_name": "冬至"
@@ -962,7 +962,7 @@
     "start_date": "January 1",
     "end_date": "January 4",
     "days": ["January 1", "January 2", "January 3", "January 4"],
-    "colorIndex": 66,
+    "index": 66,
     "season": {
       "english_name": "Winter Solstice",
       "japanese_name": "冬至"
@@ -974,7 +974,7 @@
     "start_date": "January 5",
     "end_date": "January 9",
     "days": ["January 5", "January 6", "January 7", "January 8", "January 9"],
-    "colorIndex": 67,
+    "index": 67,
     "season": {
       "english_name": "Minor Cold",
       "japanese_name": "小寒"
@@ -992,7 +992,7 @@
       "January 13",
       "January 14"
     ],
-    "colorIndex": 68,
+    "index": 68,
     "season": {
       "english_name": "Minor Cold",
       "japanese_name": "小寒"
@@ -1010,7 +1010,7 @@
       "January 18",
       "January 19"
     ],
-    "colorIndex": 69,
+    "index": 69,
     "season": {
       "english_name": "Minor Cold",
       "japanese_name": "小寒"
@@ -1028,7 +1028,7 @@
       "January 23",
       "January 24"
     ],
-    "colorIndex": 70,
+    "index": 70,
     "season": {
       "english_name": "Major Cold",
       "japanese_name": "大寒"
@@ -1046,7 +1046,7 @@
       "January 28",
       "January 29"
     ],
-    "colorIndex": 71,
+    "index": 71,
     "season": {
       "english_name": "Major Cold",
       "japanese_name": "大寒"
@@ -1064,7 +1064,7 @@
       "February 2",
       "February 3"
     ],
-    "colorIndex": 72,
+    "index": 72,
     "season": {
       "english_name": "Major Cold",
       "japanese_name": "大寒"
