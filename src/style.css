@@ -98,13 +98,30 @@
 
             0%,
             100% {
+              border-color: transparent;
+              box-shadow: unset;
               opacity: 0;
               scale: 0.85;
             }
 
+            45% {
+              border-color: transparent;
+              box-shadow: unset;
+              opacity: 0.85;
+              scale: 1;
+            }
+
             50% {
+              border-color: var(--color__highlight--light);
               box-shadow: var(--shadow);
               opacity: 1;
+              scale: 1;
+            }
+
+            55% {
+              border-color: transparent;
+              box-shadow: unset;
+              opacity: 0.85;
               scale: 1;
             }
           }
