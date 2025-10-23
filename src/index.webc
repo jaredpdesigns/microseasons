@@ -6,8 +6,9 @@ pageClass: home
 <figure webc:for="(microseason, index) of microseasons"
   class="microseason border__all color__bg--highlight--ghost color__border--highlight--light radius__l width__xl">
   <section class="microseason__wrap flow__grid flow__align--block-start flow__gap--l padding__l">
-    <img class="color__bg--contrast radius__m width__s"
-      :src="`/images/${microseason.index.toString().padStart(2, '0')}.png`" :alt="microseason.english_name" />
+    <img class="color__bg--highlight--light radius__m width__s"
+      :src="`https://projects.jaredpendergraft.com/microseasons/${microseason.index.toString().padStart(2, '0')}.png`"
+      :alt="microseason.english_name" />
     <figcaption class="flow__grid flow__gap--m">
       <header class="flow__grid flow__gap--m">
         <p>

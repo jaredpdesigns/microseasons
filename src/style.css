@@ -104,7 +104,8 @@
               scale: 0.85;
             }
 
-            45% {
+            45%,
+            55% {
               border-color: transparent;
               box-shadow: unset;
               opacity: 0.85;
@@ -117,19 +118,33 @@
               opacity: 1;
               scale: 1;
             }
-
-            55% {
-              border-color: transparent;
-              box-shadow: unset;
-              opacity: 0.85;
-              scale: 1;
-            }
           }
 
           animation: scale linear both;
           animation-timeline: view();
           animation-range: entry 25% exit 75%;
           transform-origin: center center;
+
+          /*
+           * Active state for keyboard-focused item
+           */
+          &.active,
+          &.active-second {
+            animation: none;
+            scale: 1;
+          }
+
+          &.active {
+            border-color: var(--color__highlight--light);
+            box-shadow: var(--shadow);
+            opacity: 1;
+          }
+
+          &.active-second {
+            border-color: transparent;
+            box-shadow: unset;
+            opacity: 0.85;
+          }
         }
       }
     }

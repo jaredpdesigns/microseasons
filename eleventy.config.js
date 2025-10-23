@@ -3,7 +3,6 @@ import htmlmin from "html-minifier";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import postcss from "postcss";
-import { EleventyServerlessBundlerPlugin } from "@11ty/eleventy";
 import pluginWebC from "@11ty/eleventy-plugin-webc";
 import postcssImport from "postcss-import";
 import postcssNested from "postcss-nested";
@@ -17,19 +16,47 @@ export default function (eleventyConfig) {
     components: "src/_components/**/*.webc"
   });
 
-  // Image optimization
+  /*
+   * Image optimization
+   * Uses CloudFlare R2 + Image Resizing for remote image optimization
+   */
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    inputDir: "images",
+    statsOnly: true,
+    cacheOptions: {
+      duration: "30d",
+      directory: ".cache/eleventy-img",
+      removeUrlQueryParams: false
+    },
     formats: ["avif", "webp", "jpeg"],
     widths: [320, 640],
-    outputDir: "dist/img/",
-    urlPath: "/img/",
     htmlOptions: {
       imgAttributes: {
         decoding: "async",
         loading: "lazy",
         sizes: "(min-width: 36em) 33.3vw, 100vw"
       }
+    },
+    urlFormat: ({ src, width, format }) => {
+      /*
+       * Only transform images from CloudFlare R2 image host
+       * Return original URL for all other images
+       */
+      if (!src.startsWith("https://images.jaredpendergraft.com/")) {
+        return src;
+      }
+
+      const params = [
+        `w=${width}`,
+        `f=${format}`,
+        "q=auto",
+        "metadata=none",
+        "onerror=redirect"
+      ];
+
+      return src.replace(
+        /^https:\/\/([^/]+)/,
+        `$&/cdn-cgi/image/${params.join(",")}`
+      );
     }
   });
 

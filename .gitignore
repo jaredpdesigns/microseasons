@@ -3,6 +3,4 @@ node_modules/
 .DS_Store
 .env
 .yarn
-# Local Netlify folder
-.netlify
-.yarn/install-state.gz
+.cache
