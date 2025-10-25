@@ -23,7 +23,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     statsOnly: true,
     cacheOptions: {
-      duration: "30d",
+      duration: "365d",
       directory: ".cache/eleventy-img",
       removeUrlQueryParams: false
     },
